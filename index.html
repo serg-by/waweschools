@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./css/reset.css" />
+  <link rel="stylesheet" href="./css/slick.css">
+  <link rel="stylesheet" href="./css/jquery.fancybox.min.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Raleway:wght@600;700&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="./css/style.css" />
+  <title>Школа серфинга - WAWE</title>
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="header__wrapper">
+        <div class="logo">
+          <img src="./images/logo.svg" alt="логотип wawe" />
+        </div>
+
+        <nav class="nav">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a class="nav__link" href="#abouts">О нас</a>
+            </li>
+
+            <li class="nav__item">
+              <a class="nav__link " href="#schools">Услуги</a>
+            </li>
+
+            <li class="nav__item">
+              <a class="nav__link" href="#price">Стоимость</a>
+            </li>
+
+            <li class="nav__item">
+              <a class="nav__link" href="#blogs">Блог</a>
+            </li>
+
+            <li class="nav__item">
+              <a class="nav__link" href="#team">Команда</a>
+            </li>
+
+            <li class="nav__item">
+              <a class="nav__link" href="#contacts">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main class="main">
+    <section class="hero" style="background-image: url(./images/bg.png);">
+      <div class="container">
+        <div class="hero__wrapper">
+          <h1 class="hero__title">
+            <span>Wawe</span>
+            Школа серфинга на канарских Островах
+          </h1>
+
+          <a class="hero__icon" href="#!">
+            <svg width="20" height="69" viewBox="0 0 20 69" fill="#ffffff" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M19.8372 43.7682C19.0787 29.7428 16.111 13.8178 11.4111 1.77122C11.7245 1.0447 11.245 -0.219081 10.6159 0.0326471C3.22778 2.98797 1.14916 23.5694 0.389332 33.3937C-0.448886 44.2302 -0.682241 64.7384 7.76561 68.3159C11.2466 69.7906 15.3789 67.8922 17.6002 63.2946C20.1916 57.9311 20.1853 50.2029 19.8372 43.7682ZM16.8406 34.0295C14.5593 33.4665 11.3791 34.5443 10.0267 34.8442C9.47931 34.9655 8.94625 35.1128 8.41274 35.2602C8.47568 25.0581 9.31389 14.7821 10.1589 4.68098C12.1544 10.8709 15.1717 22.5577 16.8406 34.0295ZM15.6045 37.7246C15.5332 37.9289 15.4698 38.1148 15.4184 38.2787C15.2539 38.0759 15.0928 37.8609 14.9272 37.6555C15.1521 37.6768 15.3782 37.6999 15.6045 37.7246ZM2.38206 34.4462C2.90126 25.9003 4.33662 11.0576 8.9826 4.42704C7.02032 14.0989 6.06077 25.0783 6.15325 35.9742C6.02691 36.0198 5.90353 36.0786 5.77765 36.126C5.55316 36.0113 5.30231 36.0183 5.061 36.2197C4.9458 36.3164 4.84173 36.4424 4.73016 36.549C3.88672 36.9058 3.0485 37.2898 2.21778 37.7341C2.26663 36.4957 2.32548 35.3782 2.38206 34.4462ZM8.91058 65.2316C4.22505 64.7436 2.642 56.5071 2.23096 48.2876C2.3423 48.3857 2.4625 48.45 2.58747 48.4761C2.61314 48.5371 2.66041 48.5687 2.71199 48.5151C2.72312 48.5037 2.73516 48.4948 2.74652 48.4831C2.96488 48.4654 3.18779 48.3254 3.38751 48.0009C3.43841 47.9179 3.48976 47.833 3.54089 47.7488C4.48681 46.9543 5.49567 46.3774 6.53225 45.9416C7.00306 52.6978 7.89581 59.2541 9.24323 65.2515C9.13189 65.2437 9.02441 65.2434 8.91058 65.2316ZM11.3019 65.121C11.2939 65.0765 11.2905 65.0346 11.28 64.9887C9.78061 58.521 8.97851 51.911 8.6236 45.2338C9.19687 45.0783 9.77061 44.9435 10.3389 44.8251C12.9726 44.2765 15.417 45.3073 17.9633 45.1423C18.4616 55.505 16.9651 63.8987 11.3019 65.121Z" />
+            </svg>
+            <span class="sr-only"> Нажать для скрола вниз</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section about" id="abouts">
+      <div class="container">
+        <div class="about__wrapper">
+          <h2 class="title title--decor">О школе, о серфинге, о канарах</h2>
+          <div class="about__items">
+            <p>
+              Канарские острова не случайно называют европейскими Гавайями –
+              это идеальное место для поклонников серфинга: стабильный теплый
+              ветер круглый год, песчаные пляжи, километры нетронутых
+              просторов и прозрачное море. А настоящей Меккой для серфингистов
+              становится Фуэртевентура – второй по величине остров архипелага.
+            </p>
+
+            <p>
+              Пока что вы только хотите понять, что такое серфинг, или уже
+              испытали всю прелесть катания на волнах, но желаете поднять свой
+              уровень? Наша школа серфинга сможет предложить обучение для
+              любого уровня подготовки.
+            </p>
+
+            <p>
+              Именно здесь лучшее в Испании место, в котором можно пройти
+              обучение серфингу. Кроме того, что зимой и осенью сюда приходят
+              огромные атлантические волны, Фуэртевентура может похвастать и
+              множеством мелководных спокойных лагун, отлично подходящих для
+              обучения начинающих серфингистов.
+            </p>
+
+            <p>
+              Четыре часа увлекательных занятий в день помогут вам уверенно
+              покорять волны, почувствовать себя настоящим серфингистом.
+            </p>
+
+            <p>
+              Серфинг на Канарских островах доступен круглый год – и волны, и
+              подходящая погода здесь есть всегда. Причем волну, подходящую по
+              уровню, сможет найти и настоящий профи, и новичок. Не случайно
+              считается, что именно это место лучше всего подойдет для
+              обучения здесь возможно без сложностей переходить на новый
+              уровень.
+            </p>
+
+            <p>
+              Основные достоинства нашей русской школы – высокое качество
+              преподавания и организации занятий, безопасность (все наши
+              клиенты застрахованы в компании Allianz), отличный инвентарь и
+              экипировка (предоставляется на весь курс обучения), в том числе
+              мягкие безопасные доски для начинающих.
+            </p>
+
+            <p>
+              Перечисляя достоинства, нельзя обойти и то, что пляжи
+              Фуэртевентуры самые протяженные на Канарах. В итоге невозможно
+              представить их переполненных туристами. Вы столкнетесь только с
+              теми, кого,как и вас, будет интересовать одна цель – обучение
+              серфингу.
+            </p>
+
+            <p>
+              Сначала мы определяем уровень катания и физической подготовки и
+              только потом составляем программу подготовки. И можем заверить,
+              что после того, как закончится обучение, вы не только получите
+              массу великолепных ощущений, но и это уровень поднимется на
+              новую ступень.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section school" id="schools">
+      <div class="container">
+        <div class="school__wrapper">
+          <h2 class="title title--decor">в школе вы получите</h2>
+          <ul class="school__items">
+            <li class="school_item">
+              <h4 class="school_title school--t1">Проживание</h4>
+              <div class="school_text">
+                <p>
+                  Наша школа серфинга находится в 100 м от океанского
+                  побережья. К услугам гостей открытый бассейн и бесплатный
+                  Wi-Fi. Из верхней террасы открывается вид на океан.
+                  Расстояние до центра города 15 мин.
+                </p>
+              </div>
+            </li>
+
+            <li class="school_item">
+              <h4 class="school_title school--t2">Перелет и страховку</h4>
+              <div class="school_text">
+                <p>
+                  Все участники программы застрахованы страховой компанией
+                  Allianz.
+                </p>
+                <p>
+                  Перелет из Тенерифе до острова Лансароте и обратно входит в
+                  стоимость программы
+                </p>
+                <p></p>
+              </div>
+            </li>
+
+            <li class="school_item">
+              <h4 class="school_title school--t3">Обучение и экипировку</h4>
+              <div class="school_text">
+                <p>
+                  Все оборудование и экипировка известных производителей и
+                  предоставляется на весь курс программы. Тренировочный
+                  процесс начинается с определения вашего уровня катания
+                </p>
+              </div>
+            </li>
+          </ul>
+
+          <div class="school__info">
+            <ul class="school__info-items">
+              <li class="school__info-item">
+                <div class="school__info-num" style="width: 85%">
+                  <svg viewBox="0 0 293 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M285.099 1.23264C280.303 4.29896 278.645 7.04695 268.37 8.54568C255.723 10.392 243.135 5.98673 236.902 2.37471C234.752 1.12805 229.536 0.888328 227.528 2.37471C218.724 8.88999 199.227 7.29901 190.908 1.01111C188.862 -0.53569 181.945 -0.259588 181.096 1.51004C176.421 11.2573 155.431 12.2889 141.373 5.22405C142.908 3.3219 134.904 2.02715 132.722 3.88903C120.921 13.9605 97.8831 12.8353 84.5116 3.84746C82.1909 2.28766 76.9919 2.83467 75.4926 4.30611C64.6255 14.9759 47.6995 9.90019 38.2013 2.55597C36.3515 1.1248 31.0756 1.62047 29.9604 2.97498C24.7697 9.28302 16.2182 10.4608 1.8116 12.0927C-0.901436 12.4007 -0.482377 14.2327 2.50113 14.078C19.0081 13.2218 28.0237 12.0791 34.7704 7.29576C48.6311 15.7177 67.9813 17.438 80.9654 8.57622C97.8013 16.7767 124.846 17.7115 138.246 7.95515C153.131 15.8334 178.092 15.4455 188.088 6.8605C200.983 12.7794 219.753 13.611 232.738 6.98719C252.064 14.5477 291.587 16.2401 292.996 2.06678C293.172 0.37641 287.221 -0.124463 285.099 1.23264Z"
+                      fill="#00B2A0" />
+                  </svg>
+                  <span>85%</span>
+                </div>
+                <p>Приехали второй раз</p>
+              </li>
+              <li class="school__info-item">
+                <div class="school__info-num" style="width: 95%">
+                  <svg viewBox="0 0 293 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M285.099 1.23264C280.303 4.29896 278.645 7.04695 268.37 8.54568C255.723 10.392 243.135 5.98673 236.902 2.37471C234.752 1.12805 229.536 0.888328 227.528 2.37471C218.724 8.88999 199.227 7.29901 190.908 1.01111C188.862 -0.53569 181.945 -0.259588 181.096 1.51004C176.421 11.2573 155.431 12.2889 141.373 5.22405C142.908 3.3219 134.904 2.02715 132.722 3.88903C120.921 13.9605 97.8831 12.8353 84.5116 3.84746C82.1909 2.28766 76.9919 2.83467 75.4926 4.30611C64.6255 14.9759 47.6995 9.90019 38.2013 2.55597C36.3515 1.1248 31.0756 1.62047 29.9604 2.97498C24.7697 9.28302 16.2182 10.4608 1.8116 12.0927C-0.901436 12.4007 -0.482377 14.2327 2.50113 14.078C19.0081 13.2218 28.0237 12.0791 34.7704 7.29576C48.6311 15.7177 67.9813 17.438 80.9654 8.57622C97.8013 16.7767 124.846 17.7115 138.246 7.95515C153.131 15.8334 178.092 15.4455 188.088 6.8605C200.983 12.7794 219.753 13.611 232.738 6.98719C252.064 14.5477 291.587 16.2401 292.996 2.06678C293.172 0.37641 287.221 -0.124463 285.099 1.23264Z"
+                      fill="#00B2A0" />
+                  </svg>
+                  <span>95%</span>
+                </div>
+                <p>Научились кататься</p>
+              </li>
+              <li class="school__info-item">
+                <div class="school__info-num" style="width: 99%">
+                  <svg viewBox="0 0 293 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M285.099 1.23264C280.303 4.29896 278.645 7.04695 268.37 8.54568C255.723 10.392 243.135 5.98673 236.902 2.37471C234.752 1.12805 229.536 0.888328 227.528 2.37471C218.724 8.88999 199.227 7.29901 190.908 1.01111C188.862 -0.53569 181.945 -0.259588 181.096 1.51004C176.421 11.2573 155.431 12.2889 141.373 5.22405C142.908 3.3219 134.904 2.02715 132.722 3.88903C120.921 13.9605 97.8831 12.8353 84.5116 3.84746C82.1909 2.28766 76.9919 2.83467 75.4926 4.30611C64.6255 14.9759 47.6995 9.90019 38.2013 2.55597C36.3515 1.1248 31.0756 1.62047 29.9604 2.97498C24.7697 9.28302 16.2182 10.4608 1.8116 12.0927C-0.901436 12.4007 -0.482377 14.2327 2.50113 14.078C19.0081 13.2218 28.0237 12.0791 34.7704 7.29576C48.6311 15.7177 67.9813 17.438 80.9654 8.57622C97.8013 16.7767 124.846 17.7115 138.246 7.95515C153.131 15.8334 178.092 15.4455 188.088 6.8605C200.983 12.7794 219.753 13.611 232.738 6.98719C252.064 14.5477 291.587 16.2401 292.996 2.06678C293.172 0.37641 287.221 -0.124463 285.099 1.23264Z"
+                      fill="#00B2A0" />
+                  </svg>
+                  <span>99%</span>
+                </div>
+                <p>Довольных клиентов</p>
+              </li>
+            </ul>
+
+            <div class="school__info-text">
+              <p>
+                Огромным преимуществом нашей школы является собственная
+                методика обучения. Мы разработали собственный стиль обучения
+                серфингу, который позволяет новичкам максимально быстро встать
+                на доску.
+              </p>
+              <p>
+                Именно наша методика и наши преподаватели позволили нам пройти
+                аттестацию Федерации серфинга Канарских островов - FEDERACIÓN
+                CANARIA DE SURF. Это означает, что наша школа соответствует
+                всем мировым стандартам. Переаттестация производится ежегодно
+                и это позволяет нам всегда стремиться к улучшению обучения.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section info" id="blogs" style="background-image: url(../images/inf.jpg);">
+      <div class="container">
+        <h2 class="title title--decor info__title">ПОКОРЯЙ ВЕРШИНЫ</h2>
+        <div class="info__text">
+          <p>
+            Преподаватели нашей школы серфинга в числе лучших серферов на
+            Канарских островах. Среди них - чемпион Европы по лонгборду,
+            который с радостью поделится опытом как с новичками, так и более
+            опытными серферами. Все члены преподавательского состава являются
+            сертифицированными членами Федерации серфинга Канарских островов.
+            Некоторые из них знают русский язык, что определенно позиционирует
+            нас как русскую школу серфинга за границей!
+          </p>
+          <p>
+            Весь тренерский состав регулярно участвует в семинарах и курсах
+            повышения квалификации, которые проводятся по всему миру
+            различными известными серф-клубами и федерациями. Поэтому в нашей
+            школе серфинга вы можете быть спокойны: вас обучают лучшие
+            тренеры!
+          </p>
+          <p>
+            Методика обучения серфингу рассчитана как на новичков, на серферов
+            среднего уровня, так и на серферов уровня ТОП. Тренеры находят
+            подход к каждому, несмотря на то, что обучение серфингу в нашей
+            школе производится в группах. Однако, мы предлагаем персональные
+            уроки серфинга - только вы и тренер! П
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section gallery" id="team">
+      <div class="container">
+        <h2 class="title title--decor">Галерея</h2>
+        <div class="gallery__buttons">
+          <button class="gallery__btn" data-filter="all">Все</button>
+          <button class="gallery__btn mixitup-control-active" data-filter=".category-tur">
+            Туристы
+          </button>
+          <button class="gallery__btn" data-filter=".category-natur">
+            Природа
+          </button>
+          <button class="gallery__btn" data-filter=".category-profi">
+            Профи
+          </button>
+        </div>
+
+        <div class="gallery__inner">
+
+          <ul class="gallery__items ">
+            <li class="gallery__item mix category-tur" data-fancybox="gallery" href=" ./images/gallery/foto1.jpg">
+              <img src="./images/gallery/foto1.jpg" alt="" />
+            </li>
+            <li class="gallery__item mix category-tur" data-fancybox="gallery" href=" ./images/gallery/foto2.jpg">
+              <img src="./images/gallery/foto2.jpg" alt="" />
+            </li>
+            <li class="gallery__item mix category-tur" data-fancybox="gallery" href=" ./images/gallery/foto3.jpg">
+              <img src="./images/gallery/foto3.jpg" alt="" />
+            </li>
+            <li class="gallery__item mix category-tur" data-fancybox="gallery" href="./images/gallery/foto4.jpg">
+              <img src="./images/gallery/foto4.jpg" alt="" />
+            </li>
+            <li class="gallery__item mix category-tur" data-fancybox="images" href="./images/gallery/foto5.jpg">
+              <img src="./images/gallery/foto5.jpg" alt="" />
+            </li>
+            <li class="gallery__item mix category-tur" data-fancybox="images" href="./images/gallery/foto6.jpg">
+              <img src="./images/gallery/foto6.jpg" alt="" />
+            </li>
+            <li class="gallery__item mix category-profi" data-fancybox="images" href="./images/gallery/foto1.jpg">
+              <img src="./images/gallery/foto1.jpg" alt="" />
+            </li>
+            <li class="gallery__item mix category-profi" data-fancybox="images" href="./images/gallery/foto2.jpg">
+              <img src="./images/gallery/foto2.jpg" alt="" />
+            </li>
+            <li class="gallery__item mix category-profi" data-fancybox="images" href="./images/gallery/foto3.jpg">
+              <img src="./images/gallery/foto3.jpg" alt="" />
+            </li>
+            <li class="gallery__item mix category-profi" data-fancybox="images" href="./images/gallery/foto4.jpg">
+              <img src="./images/gallery/foto4.jpg" alt="" />
+            </li>
+            <li class="gallery__item mix category-profi" data-fancybox="images" href="./images/gallery/foto5.jpg">
+              <img src="./images/gallery/foto5.jpg" alt="" />
+            </li>
+            <li class="gallery__item mix category-profi" data-fancybox="images" href="./images/gallery/foto6.jpg">
+              <img src="./images/gallery/foto6.jpg" alt="" />
+            </li>
+            <li class="gallery__item mix category-natur" data-fancybox="images" href="./images/gallery/foto6.jpg">
+              <img src="./images/gallery/foto6.jpg" alt="" />
+            </li>
+            <li class="gallery__item mix category-natur" data-fancybox="images" href="./images/gallery/foto2.jpg">
+              <img src="./images/gallery/foto2.jpg" alt="" />
+            </li>
+            <li class="gallery__item mix category-natur" data-fancybox="images" href="./images/gallery/foto4.jpg">
+              <img src="./images/gallery/foto4.jpg" alt="" />
+            </li>
+            <li class="gallery__item mix category-natur" data-fancybox="images" href="./images/gallery/foto3.jpg">
+              <img src="./images/gallery/foto3.jpg" alt="" />
+            </li>
+            <li class="gallery__item mix category-natur" data-fancybox="images" href="./images/gallery/foto5.jpg">
+              <img src="./images/gallery/foto5.jpg" alt="" />
+            </li>
+            <li class="gallery__item mix category-natur" data-fancybox="images" href="./images/gallery/foto1.jpg">
+              <img src="./images/gallery/foto1.jpg" alt="" />
+            </li>
+
+
+          </ul>
+
+          <button class="btn">Показать еще</button>
+
+
+
+
+        </div>
+      </div>
+
+
+      <blockquote class="blockquotes">
+        <p>
+          «Если сомневаешься – иди катайся.»
+          
+            <cite>Нэт Янг, первый Чемпион Мира по сёрфингу</cite>
+    
+          
+        </p>
+      </blockquote>
+
+      </div>
+      <div class="container">
+
+        <div class="video__popup" >
+          <a class="video__popup-play" style="background-image: url(../images/bg_play.jpg);" data-fancybox="" href="https://youtu.be/6B_6K-splRU">
+            <span class="sr-only">Нажмите для воспроизведения видео</span>
+          </a>
+        </div>
+
+        <ul class="video__popup-items">
+          <li class="video__popup-item"><span> 450 </span> туристов</li>
+
+          <li class="video__popup-item"><span>2500</span> часов катания</li>
+
+          <li class="video__popup-item"><span> 10</span> проф. тренеров</li>
+
+          <li class="video__popup-item"><span>365</span> дней в году</li>
+        </ul>
+
+      </div>
+    </section>
+
+
+
+
+
+  </main>
+
+  <div class="scroll-up ">
+    <svg class="scroll-up__svg" viewBox="-2 -2 52 52">
+      <path class="scroll-up__svg-path" d="
+                M24,0
+                a24,24 0 0,1 0,48
+                a24,24 0 0,1 0,-48
+            " />
+    </svg>
+  </div>
+
+
+  <script src="./js/jquery-3.6.0.min.js"></script>
+  <script src="./js/slick.min.js"></script>
+  <script src="./js/jquery.fancybox.min.js"></script>
+  <script src="./js/mixitup.min.js"></script>
+  <script src="./js/gallery-fancy.js"></script>
+  <script src="./js/link.js"></script>
+  <script src="./js/main.js"></script>
+</body>
+
+</html>
